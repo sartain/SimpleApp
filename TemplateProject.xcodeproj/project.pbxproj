@@ -11,12 +11,13 @@
 		291F177527108C8B00C07428 /* ViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177427108C8B00C07428 /* ViewControllerRouter.swift */; };
 		291F17772710973A00C07428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 291F17762710973A00C07428 /* Localizable.strings */; };
 		291F177A27109A1E00C07428 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177927109A1E00C07428 /* Localize.swift */; };
+		291F177C27109B7700C07428 /* LocalizationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177B27109B7700C07428 /* LocalizationKey.swift */; };
 		298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DB27106C560050A0C0 /* AppDelegate.swift */; };
 		298BE3DE27106C560050A0C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DD27106C560050A0C0 /* SceneDelegate.swift */; };
 		298BE3E027106C560050A0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DF27106C560050A0C0 /* ViewController.swift */; };
 		298BE3E527106C580050A0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298BE3E427106C580050A0C0 /* Assets.xcassets */; };
 		298BE3E827106C580050A0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298BE3E627106C580050A0C0 /* LaunchScreen.storyboard */; };
-		298BE3F327106C580050A0C0 /* TemplateProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3F227106C580050A0C0 /* TemplateProjectTests.swift */; };
+		298BE3F327106C580050A0C0 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3F227106C580050A0C0 /* LocalizationTests.swift */; };
 		298BE3FD27106C580050A0C0 /* TemplateProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FC27106C580050A0C0 /* TemplateProjectUITests.swift */; };
 		298BE3FF27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FE27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		291F177427108C8B00C07428 /* ViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRouter.swift; sourceTree = "<group>"; };
 		291F17762710973A00C07428 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		291F177927109A1E00C07428 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		291F177B27109B7700C07428 /* LocalizationKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKey.swift; sourceTree = "<group>"; };
 		298BE3D827106C560050A0C0 /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298BE3DB27106C560050A0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298BE3DD27106C560050A0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		298BE3E427106C580050A0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298BE3E727106C580050A0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298BE3EE27106C580050A0C0 /* TemplateProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		298BE3F227106C580050A0C0 /* TemplateProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateProjectTests.swift; sourceTree = "<group>"; };
+		298BE3F227106C580050A0C0 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		298BE3F827106C580050A0C0 /* TemplateProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		298BE3FC27106C580050A0C0 /* TemplateProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateProjectUITests.swift; sourceTree = "<group>"; };
 		298BE3FE27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				291F17762710973A00C07428 /* Localizable.strings */,
 				291F177927109A1E00C07428 /* Localize.swift */,
+				291F177B27109B7700C07428 /* LocalizationKey.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -144,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				298BE419271077740050A0C0 /* Configurations */,
-				298BE3F227106C580050A0C0 /* TemplateProjectTests.swift */,
+				298BE3F227106C580050A0C0 /* LocalizationTests.swift */,
 			);
 			path = TemplateProjectTests;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291F177A27109A1E00C07428 /* Localize.swift in Sources */,
+				291F177C27109B7700C07428 /* LocalizationKey.swift in Sources */,
 				298BE3E027106C560050A0C0 /* ViewController.swift in Sources */,
 				291F177527108C8B00C07428 /* ViewControllerRouter.swift in Sources */,
 				298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */,
@@ -360,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298BE3F327106C580050A0C0 /* TemplateProjectTests.swift in Sources */,
+				298BE3F327106C580050A0C0 /* LocalizationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

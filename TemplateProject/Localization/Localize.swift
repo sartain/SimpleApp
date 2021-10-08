@@ -7,6 +7,6 @@
 
 import Foundation
 
-func localize(_ key: String) -> String {
-    NSLocalizedString(key, comment: "")
+func localize(_ key: LocalizationKey) -> String {
+    NSLocalizedString(key.rawValue, comment: "")
 }
