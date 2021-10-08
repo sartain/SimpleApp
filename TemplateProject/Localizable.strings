@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TemplateProject
+
+  Created by Alex Sartain on 08/10/2021.
+  
+*/
+"first_view_controller_title" = "VC 1";
+"first_view_controller_button" = "my Button";
+"second_view_controller_title" = "VC 2";

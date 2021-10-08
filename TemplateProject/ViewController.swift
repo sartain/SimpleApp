@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
-        title = "VC 1"
+        title = NSLocalizedString("first_view_controller_title", comment: "")
         
         //Consider reference cycle
         let action = UIAction { [weak self] _ in
@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         }
         
         let button = UIButton(primaryAction: action)
-        button.setTitle("my Button", for: .normal)
+        let buttonTitle = NSLocalizedString("first_view_controller_button", comment: "")
+        button.setTitle(buttonTitle, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .secondarySystemBackground
         button.setTitleColor(.label, for: .normal)
