@@ -1,0 +1,7 @@
+PRODUCT_BUNDLE_IDENTIFIER = com.sartain.TemplateProject.UITests
+INFOPLIST_FILE = TemplateProjectUITests/Configurations/Info.plist
+
+TEST_TARGET_NAME = TemplateProject
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+PRODUCT_NAME = $(TARGET_NAME)

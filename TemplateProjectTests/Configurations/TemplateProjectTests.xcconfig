@@ -1,0 +1,5 @@
+#include "../../Configurations/Targets/Test.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.sartain.TemplateProjectTests
+INFOPLIST_FILE = TemplateProjectTests/Configurations/Info.plist
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/TemplateProject.app/TemplateProject
