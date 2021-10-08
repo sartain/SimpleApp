@@ -12,7 +12,7 @@ class LocalizationTests: XCTestCase {
 
     func testLocalization() throws {
         LocalizationKey.allCases.forEach { localizationKey in
-            XCTAssertNotEqual(localizationKey.rawValue, localize(localizationKey))
+            XCTAssertEqual(localize(localizationKey, default: "1"), localize(localizationKey, default: "2"))
         }
     }
 
