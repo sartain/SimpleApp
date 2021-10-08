@@ -9,10 +9,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let viewControllerRouter: ViewControllerRouting
+    
+    init(viewControllerRouter: ViewControllerRouting) {
+        self.viewControllerRouter = viewControllerRouter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemBackground
+        title = "VC 1"
+        
+        //Consider reference cycle
+        let action = UIAction { [weak self] _ in
+            self?.viewControllerRouter.navigateToDetailViewController()
+        }
+        
+        let button = UIButton(primaryAction: action)
+        button.setTitle("my Button", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .secondarySystemBackground
+        button.setTitleColor(.label, for: .normal)
+        button.titleLabel?.adjustsFontForContentSizeCategory = true
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+        button.layer.cornerRadius = 10
+        
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            button.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor, constant: 15),
+            button.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor, constant: -15),
+            button.heightAnchor.constraint(greaterThanOrEqualToConstant: 44)
+        ])
     }
 
 
