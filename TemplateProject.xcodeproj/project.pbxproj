@@ -10,6 +10,7 @@
 		291F177327108C1800C07428 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177227108C1800C07428 /* DetailViewController.swift */; };
 		291F177527108C8B00C07428 /* ViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177427108C8B00C07428 /* ViewControllerRouter.swift */; };
 		291F17772710973A00C07428 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 291F17762710973A00C07428 /* Localizable.strings */; };
+		291F177A27109A1E00C07428 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F177927109A1E00C07428 /* Localize.swift */; };
 		298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DB27106C560050A0C0 /* AppDelegate.swift */; };
 		298BE3DE27106C560050A0C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DD27106C560050A0C0 /* SceneDelegate.swift */; };
 		298BE3E027106C560050A0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3DF27106C560050A0C0 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		291F177227108C1800C07428 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		291F177427108C8B00C07428 /* ViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRouter.swift; sourceTree = "<group>"; };
 		291F17762710973A00C07428 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		291F177927109A1E00C07428 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		298BE3D827106C560050A0C0 /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298BE3DB27106C560050A0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298BE3DD27106C560050A0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291F1778271099D700C07428 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				291F17762710973A00C07428 /* Localizable.strings */,
+				291F177927109A1E00C07428 /* Localize.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		298BE3CF27106C560050A0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +127,7 @@
 		298BE3DA27106C560050A0C0 /* TemplateProject */ = {
 			isa = PBXGroup;
 			children = (
+				291F1778271099D700C07428 /* Localization */,
 				298BE4152710766A0050A0C0 /* Configurations */,
 				298BE3DB27106C560050A0C0 /* AppDelegate.swift */,
 				298BE3DD27106C560050A0C0 /* SceneDelegate.swift */,
@@ -124,7 +136,6 @@
 				298BE3E627106C580050A0C0 /* LaunchScreen.storyboard */,
 				291F177227108C1800C07428 /* DetailViewController.swift */,
 				291F177427108C8B00C07428 /* ViewControllerRouter.swift */,
-				291F17762710973A00C07428 /* Localizable.strings */,
 			);
 			path = TemplateProject;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291F177A27109A1E00C07428 /* Localize.swift in Sources */,
 				298BE3E027106C560050A0C0 /* ViewController.swift in Sources */,
 				291F177527108C8B00C07428 /* ViewControllerRouter.swift in Sources */,
 				298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */,
