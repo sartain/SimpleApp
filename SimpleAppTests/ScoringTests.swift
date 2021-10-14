@@ -23,6 +23,25 @@ class ScoringTests: XCTestCase {
         let scoreboard = Scoreboard()
         scoreboard.answerQuestion(correct: true)
         XCTAssertEqual(3, scoreboard.getScore())
+        scoreboard.answerQuestion(correct: false)
+        XCTAssertEqual(3, scoreboard.getScore())
+        scoreboard.answerQuestion(correct: true)
+        XCTAssertEqual(3 + 6, scoreboard.getScore())
     }
     
+    func testAlternateRegularAndBonusQuestion() throws {
+        let scoreboard = Scoreboard()
+        for _ in 0...2 {
+            scoreboard.answerQuestion(correct: true)
+        }
+        XCTAssertEqual(3 + 3 + 6, scoreboard.getScore())
+    }
+    
+    func testCanOnlyAnswerTenQuestions() throws {
+        let scoreboard = Scoreboard()
+        for _ in 0...20 {
+            scoreboard.answerQuestion(correct: true)
+        }
+        XCTAssertEqual(39, scoreboard.getScore())
+    }
 }

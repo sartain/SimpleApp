@@ -9,9 +9,12 @@ import Foundation
 class Scoreboard {
     
     private var score: Int
+    private var questionCount: Int
+    private let maximumQuestions: Int = 10
     
     init(){
         self.score = 0
+        self.questionCount = 1
     }
     
     func getScore() -> Int {
@@ -19,6 +22,10 @@ class Scoreboard {
     }
     
     func answerQuestion(correct: Bool) {
-        self.score += 3
+        if(self.questionCount <= maximumQuestions){
+            let addToScore = (questionCount % 3 == 0) ? 6 : 3
+            correct ? self.score += addToScore : nil
+            self.questionCount += 1
+        }
     }
 }
