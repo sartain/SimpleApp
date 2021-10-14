@@ -22,6 +22,7 @@
 		298BE3FF27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FE27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift */; };
 		29F7F6F0271865D300ACAD80 /* ScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7F6EF271865D300ACAD80 /* ScoringTests.swift */; };
 		29F7F6F32718667C00ACAD80 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7F6F22718667C00ACAD80 /* Scoreboard.swift */; };
+		29F7F6F527187EC300ACAD80 /* OldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7F6F427187EC300ACAD80 /* OldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		298BE41E2710784C0050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F7F6EF271865D300ACAD80 /* ScoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringTests.swift; sourceTree = "<group>"; };
 		29F7F6F22718667C00ACAD80 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		29F7F6F427187EC300ACAD80 /* OldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				298BE3E627106C580050A0C0 /* LaunchScreen.storyboard */,
 				291F177227108C1800C07428 /* DetailViewController.swift */,
 				291F177427108C8B00C07428 /* ViewControllerRouter.swift */,
+				29F7F6F427187EC300ACAD80 /* OldViewController.swift */,
 			);
 			path = SimpleApp;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			files = (
 				291F177A27109A1E00C07428 /* Localize.swift in Sources */,
 				291F177C27109B7700C07428 /* LocalizationKey.swift in Sources */,
+				29F7F6F527187EC300ACAD80 /* OldViewController.swift in Sources */,
 				298BE3E027106C560050A0C0 /* ViewController.swift in Sources */,
 				291F177527108C8B00C07428 /* ViewControllerRouter.swift in Sources */,
 				298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */,

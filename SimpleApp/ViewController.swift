@@ -15,49 +15,67 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    let viewControllerRouter: ViewControllerRouting
-    
-    init(viewControllerRouter: ViewControllerRouting) {
-        self.viewControllerRouter = viewControllerRouter
-        super.init(nibName: nil, bundle: nil)
+    let scoreboard = Scoreboard()
+    let score = UILabel()
+    @objc func answerQuestionCorrect() {
+        scoreboard.answerQuestion(correct: true)
+        updateScoreText()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    @objc func updateScoreText() {
+        score.text = "Score: \(scoreboard.getScore())"
+    }
+    
+    @objc func answerQuestionIncorrect() {
+        scoreboard.answerQuestion(correct: false)
+        updateScoreText()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
-        title = localize(.first_view_controller_title)
-        
-        //Consider reference cycle
-        let action = UIAction { [weak self] _ in
-            self?.viewControllerRouter.navigateToDetailViewController()
-        }
-        
-        let button = UIButton(primaryAction: action)
-        let buttonTitle = localize(.first_view_controller_button)
-        button.setTitle(buttonTitle, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .secondarySystemBackground
-        button.setTitleColor(.label, for: .normal)
-        button.titleLabel?.adjustsFontForContentSizeCategory = true
-        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-        button.layer.cornerRadius = 10
-        
-        view.addSubview(button)
+        title = "popmaster"
+        let correctButton = UIButton()
+        let incorrectButton = UIButton()
+        updateScoreText()
+        correctButton.addTarget(self, action: #selector(answerQuestionCorrect), for: .touchUpInside)
+        incorrectButton.addTarget(self, action: #selector(answerQuestionIncorrect), for: .touchUpInside)
+        correctButton.setTitle("Correct", for: .normal)
+        correctButton.backgroundColor = .green
+        incorrectButton.setTitle("Incorrect", for: .normal)
+        incorrectButton.backgroundColor = .red
+        //let buttonTitle = localize(.first_view_controller_button)
+       // button.setTitle(buttonTitle, for: .normal)
+        correctButton.translatesAutoresizingMaskIntoConstraints = false
+        incorrectButton.translatesAutoresizingMaskIntoConstraints = false
+        score.translatesAutoresizingMaskIntoConstraints = false
+        //button.backgroundColor = .secondarySystemBackground
+        correctButton.setTitleColor(.label, for: .normal)
+        correctButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        correctButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+        correctButton.layer.cornerRadius = 10
+        incorrectButton.setTitleColor(.label, for: .normal)
+        incorrectButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        incorrectButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
+        incorrectButton.layer.cornerRadius = 10
+        view.addSubview(score)
+        view.addSubview(correctButton)
+        view.addSubview(incorrectButton)
         
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            button.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor, constant: 15),
-            button.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor, constant: -15),
-            button.heightAnchor.constraint(greaterThanOrEqualToConstant: 44)
+            //score.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            //score.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor, constant: 15),
+            //score.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor, constant: -15),
+            //score.heightAnchor.constraint(greaterThanOrEqualToConstant: 44),
+            correctButton.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor, constant: -15),
+            incorrectButton.trailingAnchor.constraint(equalTo: view.readableContentGuide.trailingAnchor, constant: 15),
+            correctButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            incorrectButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            self.score.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150),
+            self.score.leadingAnchor.constraint(equalTo: view.readableContentGuide.leadingAnchor, constant: 0)
         ])
     }
-
 
 }
 
