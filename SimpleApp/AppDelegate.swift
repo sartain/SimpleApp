@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TemplateProject
+//  SimpleApp
 //
 //  Created by Alex Sartain on 08/10/2021.
 //

@@ -1,13 +1,11 @@
 //
-//  TemplateProjectUITestsLaunchTests.swift
-//  TemplateProjectUITests
 //
 //  Created by Alex Sartain on 08/10/2021.
 //
 
 import XCTest
 
-class TemplateProjectUITestsLaunchTests: XCTestCase {
+class SimpleAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

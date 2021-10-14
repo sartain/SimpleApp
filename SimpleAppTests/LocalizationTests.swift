@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import TemplateProject
+@testable import SimpleApp
 
 class LocalizationTests: XCTestCase {
 

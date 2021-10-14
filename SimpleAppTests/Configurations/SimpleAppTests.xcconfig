@@ -1,0 +1,5 @@
+#include "../../Configurations/Targets/Test.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleAppTests
+INFOPLIST_FILE = SimpleAppTests/Configurations/Info.plist
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/SimpleApp.app/SimpleApp

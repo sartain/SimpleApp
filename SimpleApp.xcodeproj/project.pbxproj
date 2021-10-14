@@ -18,8 +18,8 @@
 		298BE3E527106C580050A0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298BE3E427106C580050A0C0 /* Assets.xcassets */; };
 		298BE3E827106C580050A0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298BE3E627106C580050A0C0 /* LaunchScreen.storyboard */; };
 		298BE3F327106C580050A0C0 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3F227106C580050A0C0 /* LocalizationTests.swift */; };
-		298BE3FD27106C580050A0C0 /* TemplateProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FC27106C580050A0C0 /* TemplateProjectUITests.swift */; };
-		298BE3FF27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FE27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift */; };
+		298BE3FD27106C580050A0C0 /* SimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FC27106C580050A0C0 /* SimpleAppUITests.swift */; };
+		298BE3FF27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FE27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,17 +45,17 @@
 		291F17762710973A00C07428 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		291F177927109A1E00C07428 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		291F177B27109B7700C07428 /* LocalizationKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKey.swift; sourceTree = "<group>"; };
-		298BE3D827106C560050A0C0 /* TemplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		298BE3D827106C560050A0C0 /* SimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298BE3DB27106C560050A0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298BE3DD27106C560050A0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		298BE3DF27106C560050A0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		298BE3E427106C580050A0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298BE3E727106C580050A0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		298BE3EE27106C580050A0C0 /* TemplateProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		298BE3EE27106C580050A0C0 /* SimpleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		298BE3F227106C580050A0C0 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
-		298BE3F827106C580050A0C0 /* TemplateProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		298BE3FC27106C580050A0C0 /* TemplateProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateProjectUITests.swift; sourceTree = "<group>"; };
-		298BE3FE27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		298BE3F827106C580050A0C0 /* SimpleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		298BE3FC27106C580050A0C0 /* SimpleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppUITests.swift; sourceTree = "<group>"; };
+		298BE3FE27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		298BE40D271074F50050A0C0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		298BE40E271074F50050A0C0 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		298BE410271074F50050A0C0 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		298BE414271074F50050A0C0 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		298BE4162710766A0050A0C0 /* TemplateProject.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TemplateProject.xcconfig; sourceTree = "<group>"; };
 		298BE4182710766A0050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		298BE41A271077A50050A0C0 /* TemplateProjectTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TemplateProjectTests.xcconfig; sourceTree = "<group>"; };
+		298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SimpleAppTests.xcconfig; sourceTree = "<group>"; };
 		298BE41B271078190050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TemplateProjectUITests.xcconfig; sourceTree = "<group>"; };
 		298BE41E2710784C0050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				298BE40B271074F50050A0C0 /* Configurations */,
-				298BE3DA27106C560050A0C0 /* TemplateProject */,
-				298BE3F127106C580050A0C0 /* TemplateProjectTests */,
-				298BE3FB27106C580050A0C0 /* TemplateProjectUITests */,
+				298BE3DA27106C560050A0C0 /* SimpleApp */,
+				298BE3F127106C580050A0C0 /* SimpleAppTests */,
+				298BE3FB27106C580050A0C0 /* SimpleAppUITests */,
 				298BE3D927106C560050A0C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,14 +120,14 @@
 		298BE3D927106C560050A0C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				298BE3D827106C560050A0C0 /* TemplateProject.app */,
-				298BE3EE27106C580050A0C0 /* TemplateProjectTests.xctest */,
-				298BE3F827106C580050A0C0 /* TemplateProjectUITests.xctest */,
+				298BE3D827106C560050A0C0 /* SimpleApp.app */,
+				298BE3EE27106C580050A0C0 /* SimpleAppTests.xctest */,
+				298BE3F827106C580050A0C0 /* SimpleAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		298BE3DA27106C560050A0C0 /* TemplateProject */ = {
+		298BE3DA27106C560050A0C0 /* SimpleApp */ = {
 			isa = PBXGroup;
 			children = (
 				291F1778271099D700C07428 /* Localization */,
@@ -140,26 +140,26 @@
 				291F177227108C1800C07428 /* DetailViewController.swift */,
 				291F177427108C8B00C07428 /* ViewControllerRouter.swift */,
 			);
-			path = TemplateProject;
+			path = SimpleApp;
 			sourceTree = "<group>";
 		};
-		298BE3F127106C580050A0C0 /* TemplateProjectTests */ = {
+		298BE3F127106C580050A0C0 /* SimpleAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				298BE419271077740050A0C0 /* Configurations */,
 				298BE3F227106C580050A0C0 /* LocalizationTests.swift */,
 			);
-			path = TemplateProjectTests;
+			path = SimpleAppTests;
 			sourceTree = "<group>";
 		};
-		298BE3FB27106C580050A0C0 /* TemplateProjectUITests */ = {
+		298BE3FB27106C580050A0C0 /* SimpleAppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				298BE41C2710784C0050A0C0 /* Configurations */,
-				298BE3FC27106C580050A0C0 /* TemplateProjectUITests.swift */,
-				298BE3FE27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift */,
+				298BE3FC27106C580050A0C0 /* SimpleAppUITests.swift */,
+				298BE3FE27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift */,
 			);
-			path = TemplateProjectUITests;
+			path = SimpleAppUITests;
 			sourceTree = "<group>";
 		};
 		298BE40B271074F50050A0C0 /* Configurations */ = {
@@ -204,7 +204,7 @@
 		298BE419271077740050A0C0 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				298BE41A271077A50050A0C0 /* TemplateProjectTests.xcconfig */,
+				298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */,
 				298BE41B271078190050A0C0 /* Info.plist */,
 			);
 			path = Configurations;
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		298BE3D727106C560050A0C0 /* TemplateProject */ = {
+		298BE3D727106C560050A0C0 /* SimpleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 298BE40227106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProject" */;
+			buildConfigurationList = 298BE40227106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleApp" */;
 			buildPhases = (
 				298BE3D427106C560050A0C0 /* Sources */,
 				298BE3D527106C560050A0C0 /* Frameworks */,
@@ -234,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = TemplateProject;
+			name = SimpleApp;
 			productName = TemplateProject;
-			productReference = 298BE3D827106C560050A0C0 /* TemplateProject.app */;
+			productReference = 298BE3D827106C560050A0C0 /* SimpleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		298BE3ED27106C580050A0C0 /* TemplateProjectTests */ = {
+		298BE3ED27106C580050A0C0 /* SimpleAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 298BE40527106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProjectTests" */;
+			buildConfigurationList = 298BE40527106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleAppTests" */;
 			buildPhases = (
 				298BE3EA27106C580050A0C0 /* Sources */,
 				298BE3EB27106C580050A0C0 /* Frameworks */,
@@ -252,14 +252,14 @@
 			dependencies = (
 				298BE3F027106C580050A0C0 /* PBXTargetDependency */,
 			);
-			name = TemplateProjectTests;
+			name = SimpleAppTests;
 			productName = TemplateProjectTests;
-			productReference = 298BE3EE27106C580050A0C0 /* TemplateProjectTests.xctest */;
+			productReference = 298BE3EE27106C580050A0C0 /* SimpleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		298BE3F727106C580050A0C0 /* TemplateProjectUITests */ = {
+		298BE3F727106C580050A0C0 /* SimpleAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 298BE40827106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProjectUITests" */;
+			buildConfigurationList = 298BE40827106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleAppUITests" */;
 			buildPhases = (
 				298BE3F427106C580050A0C0 /* Sources */,
 				298BE3F527106C580050A0C0 /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				298BE3FA27106C580050A0C0 /* PBXTargetDependency */,
 			);
-			name = TemplateProjectUITests;
+			name = SimpleAppUITests;
 			productName = TemplateProjectUITests;
-			productReference = 298BE3F827106C580050A0C0 /* TemplateProjectUITests.xctest */;
+			productReference = 298BE3F827106C580050A0C0 /* SimpleAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -298,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 298BE3D327106C560050A0C0 /* Build configuration list for PBXProject "TemplateProject" */;
+			buildConfigurationList = 298BE3D327106C560050A0C0 /* Build configuration list for PBXProject "SimpleApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -311,9 +311,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				298BE3D727106C560050A0C0 /* TemplateProject */,
-				298BE3ED27106C580050A0C0 /* TemplateProjectTests */,
-				298BE3F727106C580050A0C0 /* TemplateProjectUITests */,
+				298BE3D727106C560050A0C0 /* SimpleApp */,
+				298BE3ED27106C580050A0C0 /* SimpleAppTests */,
+				298BE3F727106C580050A0C0 /* SimpleAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -372,8 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298BE3FF27106C580050A0C0 /* TemplateProjectUITestsLaunchTests.swift in Sources */,
-				298BE3FD27106C580050A0C0 /* TemplateProjectUITests.swift in Sources */,
+				298BE3FF27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift in Sources */,
+				298BE3FD27106C580050A0C0 /* SimpleAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,12 +382,12 @@
 /* Begin PBXTargetDependency section */
 		298BE3F027106C580050A0C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 298BE3D727106C560050A0C0 /* TemplateProject */;
+			target = 298BE3D727106C560050A0C0 /* SimpleApp */;
 			targetProxy = 298BE3EF27106C580050A0C0 /* PBXContainerItemProxy */;
 		};
 		298BE3FA27106C580050A0C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 298BE3D727106C560050A0C0 /* TemplateProject */;
+			target = 298BE3D727106C560050A0C0 /* SimpleApp */;
 			targetProxy = 298BE3F927106C580050A0C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,6 +422,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE4162710766A0050A0C0 /* TemplateProject.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp;
+				PRODUCT_NAME = SimpleApp;
 			};
 			name = Debug;
 		};
@@ -429,20 +431,24 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE4162710766A0050A0C0 /* TemplateProject.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp;
+				PRODUCT_NAME = SimpleApp;
 			};
 			name = Release;
 		};
 		298BE40627106C580050A0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 298BE41A271077A50050A0C0 /* TemplateProjectTests.xcconfig */;
+			baseConfigurationReference = 298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = SimpleAppTests;
 			};
 			name = Debug;
 		};
 		298BE40727106C580050A0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 298BE41A271077A50050A0C0 /* TemplateProjectTests.xcconfig */;
+			baseConfigurationReference = 298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = SimpleAppTests;
 			};
 			name = Release;
 		};
@@ -450,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = SimpleAppUITests;
 			};
 			name = Debug;
 		};
@@ -457,13 +464,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = SimpleAppUITests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		298BE3D327106C560050A0C0 /* Build configuration list for PBXProject "TemplateProject" */ = {
+		298BE3D327106C560050A0C0 /* Build configuration list for PBXProject "SimpleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				298BE40027106C580050A0C0 /* Debug */,
@@ -472,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		298BE40227106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProject" */ = {
+		298BE40227106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				298BE40327106C580050A0C0 /* Debug */,
@@ -481,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		298BE40527106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProjectTests" */ = {
+		298BE40527106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				298BE40627106C580050A0C0 /* Debug */,
@@ -490,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		298BE40827106C580050A0C0 /* Build configuration list for PBXNativeTarget "TemplateProjectUITests" */ = {
+		298BE40827106C580050A0C0 /* Build configuration list for PBXNativeTarget "SimpleAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				298BE40927106C580050A0C0 /* Debug */,

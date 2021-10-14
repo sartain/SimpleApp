@@ -1,13 +1,8 @@
-//
-//  TemplateProjectUITests.swift
-//  TemplateProjectUITests
-//
-//  Created by Alex Sartain on 08/10/2021.
-//
+
 
 import XCTest
 
-class TemplateProjectUITests: XCTestCase {
+class SimpleAppUITests: XCTestCase {
 
     func testHappyPath() throws {
         // UI tests must launch the application that they test.
