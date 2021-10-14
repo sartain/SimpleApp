@@ -17,4 +17,8 @@ class Scoreboard {
     func getScore() -> Int {
         self.score
     }
+    
+    func answerQuestion(correct: Bool) {
+        self.score += 3
+    }
 }

@@ -19,4 +19,10 @@ class ScoringTests: XCTestCase {
         XCTAssertEqual(0, scoreboard.getScore())
     }
 
+    func testQuestionRight() throws {
+        let scoreboard = Scoreboard()
+        scoreboard.answerQuestion(correct: true)
+        XCTAssertEqual(3, scoreboard.getScore())
+    }
+    
 }
