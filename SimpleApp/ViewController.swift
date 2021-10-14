@@ -4,6 +4,13 @@
 //
 //  Created by Alex Sartain on 08/10/2021.
 //
+/*
+ TO-DO:
+    -Closures
+    -Callback Functions
+    -Optionals
+    -HTTP Requests / REST API, service to get data
+ */
 
 import UIKit
 

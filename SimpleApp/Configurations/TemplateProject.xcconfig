@@ -1,7 +1,7 @@
 #include "../../Configurations/Targets/App.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp
-BUNDLE_DISPLAY_NAME = Template Project
+BUNDLE_DISPLAY_NAME = Simple App
 
 DEVELOPMENT_TEAM =
 CODE_SIGN_STYLE = Automatic

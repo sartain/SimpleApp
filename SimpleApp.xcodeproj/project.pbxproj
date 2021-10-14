@@ -20,6 +20,8 @@
 		298BE3F327106C580050A0C0 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3F227106C580050A0C0 /* LocalizationTests.swift */; };
 		298BE3FD27106C580050A0C0 /* SimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FC27106C580050A0C0 /* SimpleAppUITests.swift */; };
 		298BE3FF27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BE3FE27106C580050A0C0 /* SimpleAppUITestsLaunchTests.swift */; };
+		29F7F6F0271865D300ACAD80 /* ScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7F6EF271865D300ACAD80 /* ScoringTests.swift */; };
+		29F7F6F32718667C00ACAD80 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F7F6F22718667C00ACAD80 /* Scoreboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +69,10 @@
 		298BE4182710766A0050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SimpleAppTests.xcconfig; sourceTree = "<group>"; };
 		298BE41B271078190050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TemplateProjectUITests.xcconfig; sourceTree = "<group>"; };
+		298BE41D2710784C0050A0C0 /* SimpleAppUITests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SimpleAppUITests.xcconfig; sourceTree = "<group>"; };
 		298BE41E2710784C0050A0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F7F6EF271865D300ACAD80 /* ScoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringTests.swift; sourceTree = "<group>"; };
+		29F7F6F22718667C00ACAD80 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		298BE3DA27106C560050A0C0 /* SimpleApp */ = {
 			isa = PBXGroup;
 			children = (
+				29F7F6F12718666C00ACAD80 /* Scorer */,
 				291F1778271099D700C07428 /* Localization */,
 				298BE4152710766A0050A0C0 /* Configurations */,
 				298BE3DB27106C560050A0C0 /* AppDelegate.swift */,
@@ -148,6 +153,7 @@
 			children = (
 				298BE419271077740050A0C0 /* Configurations */,
 				298BE3F227106C580050A0C0 /* LocalizationTests.swift */,
+				29F7F6EF271865D300ACAD80 /* ScoringTests.swift */,
 			);
 			path = SimpleAppTests;
 			sourceTree = "<group>";
@@ -213,10 +219,18 @@
 		298BE41C2710784C0050A0C0 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */,
+				298BE41D2710784C0050A0C0 /* SimpleAppUITests.xcconfig */,
 				298BE41E2710784C0050A0C0 /* Info.plist */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		29F7F6F12718666C00ACAD80 /* Scorer */ = {
+			isa = PBXGroup;
+			children = (
+				29F7F6F22718667C00ACAD80 /* Scoreboard.swift */,
+			);
+			path = Scorer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +371,7 @@
 				298BE3DC27106C560050A0C0 /* AppDelegate.swift in Sources */,
 				298BE3DE27106C560050A0C0 /* SceneDelegate.swift in Sources */,
 				291F177327108C1800C07428 /* DetailViewController.swift in Sources */,
+				29F7F6F32718667C00ACAD80 /* Scoreboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				298BE3F327106C580050A0C0 /* LocalizationTests.swift in Sources */,
+				29F7F6F0271865D300ACAD80 /* ScoringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE4162710766A0050A0C0 /* TemplateProject.xcconfig */;
 			buildSettings = {
+				BUNDLE_DISPLAY_NAME = SimpleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp;
 				PRODUCT_NAME = SimpleApp;
 			};
@@ -431,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE4162710766A0050A0C0 /* TemplateProject.xcconfig */;
 			buildSettings = {
+				BUNDLE_DISPLAY_NAME = SimpleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp;
 				PRODUCT_NAME = SimpleApp;
 			};
@@ -440,7 +458,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = SimpleAppTests/Configurations/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleAppTests;
 				PRODUCT_NAME = SimpleAppTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleApp.app/SimpleApp";
 			};
 			name = Debug;
 		};
@@ -448,23 +469,32 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298BE41A271077A50050A0C0 /* SimpleAppTests.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = SimpleAppTests/Configurations/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleAppTests;
 				PRODUCT_NAME = SimpleAppTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleApp.app/SimpleApp";
 			};
 			name = Release;
 		};
 		298BE40927106C580050A0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */;
+			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* SimpleAppUITests.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = SimpleAppUITests/Configurations/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp.UITests;
 				PRODUCT_NAME = SimpleAppUITests;
+				TEST_TARGET_NAME = SimpleApp;
 			};
 			name = Debug;
 		};
 		298BE40A27106C580050A0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* TemplateProjectUITests.xcconfig */;
+			baseConfigurationReference = 298BE41D2710784C0050A0C0 /* SimpleAppUITests.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = SimpleAppUITests/Configurations/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sartain.SimpleApp.UITests;
 				PRODUCT_NAME = SimpleAppUITests;
+				TEST_TARGET_NAME = SimpleApp;
 			};
 			name = Release;
 		};
